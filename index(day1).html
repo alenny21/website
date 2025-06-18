@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alenny's Website</title>
+  <base target="_blank">
   <style>
     body {
       background-color: pink;
@@ -11,42 +12,40 @@
       margin: 0;
     }
 
-    /* Top nav bar */
-.top-bar {
-  background-color: #111;
-  color: white;
-  display: flex;
-  justify-content: space-between; /* Fix: spread out left and right */
-  align-items: center;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-sizing: border-box;
-}
+    .top-bar {
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
 
-.top-bar .logo {
-  display: flex;
-  align-items: center;
-}
+    .top-bar .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.top-bar .logo img {
-  width: 60px;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 10px;
-}
+    .top-bar .logo img {
+      width: 60px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
 
-.contact-links {
-  display: flex;
-  gap: 15px;
-  flex-wrap: nowrap;         /* Prevent wrapping unless screen is small */
-  white-space: nowrap;       /* Keep full numbers/emails */
-  overflow: hidden;          /* Prevent breaking layout */
-  text-overflow: ellipsis;   /* Add ... if it still doesn't fit */
-}
-
+    .contact-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
     .contact-links a {
       color: white;
@@ -121,34 +120,31 @@
       text-decoration: underline;
     }
 
-    /* Responsive adjustments */
-   @media (max-width: 600px) {
-  .top-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: flex-start;
-    white-space: normal; /* Now allow wrapping */
-  }
-}
-
-
-      header h1 {
-        font-size: 24px;
+    @media (max-width: 600px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
       }
 
-      .content, footer {
-        padding: 15px;
+      .contact-links {
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: normal;
       }
+    }
 
-      form {
-        max-width: 100%;
-      }
+    header h1 {
+      font-size: 24px;
+    }
 
+    .content, footer {
+      padding: 15px;
+    }
+
+    form {
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -157,7 +153,8 @@
   <div class="top-bar">
     <div class="logo">
       <a href="#">
-        <img src="pexels-pixabay-257540.jpg" alt="Logo">
+        <!-- Put your image in a folder named "images" and name it exactly as below -->
+        <img src="images/pexels-pixabay-257540.jpg" alt="Logo">
       </a>
     </div>
     <div class="contact-links">
@@ -174,9 +171,8 @@
   <!-- Main Content -->
   <div class="content">
     <p>Hello everyone, my name is Alenny Almonte. This is my first HTML file where I'll be learning the fundamentals of web development.</p>
-    <p><i><a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a> – A fantastic resource for learning HTML, CSS, JavaScript, and more.</i></p>
+    <p><i><a href="https://www.w3schools.com">Visit W3Schools</a> – A fantastic resource for learning HTML, CSS, JavaScript, and more.</i></p>
   </div>
-
 
   <!-- Footer -->
   <footer>
