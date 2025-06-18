@@ -2,49 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Categories Table</title>
+  <title>Color Table | Alenny</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    .color-table {
       text-align: center;
-      background-color: #f5f5f5;
-      margin: 20px;
+      padding: 50px 20px;
     }
-
-    a {
-      display: inline-block;
-      margin-bottom: 20px;
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-    }
-
     table {
       width: 90%;
       max-width: 700px;
       margin: 0 auto;
       border-collapse: collapse;
     }
-
     th, td {
       border: 2px solid black;
       padding: 10px;
       text-align: center;
     }
-
     th {
       background-color: #f90b0b;
       color: white;
     }
-
-    hr {
-      margin: 40px auto;
-      border: none;
-      border-top: 4px solid red;
-      width: 80%;
-    }
-
     img {
       border-radius: 6px;
     }
@@ -52,44 +32,54 @@
 </head>
 <body>
 
-  <a href="index-day1.html">Go to Code for Day 1</a>
+  <header class="header">
+    <div class="nav-wrapper">
+      <a href="#" class="logo">Alenny.</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="portfolio.html" class="active">Portfolios</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Color Categories</h2>
-
-  <table>
-    <tr>
-      <th>Category</th>
-      <th>Examples</th>
-      <th>Visual</th>
-    </tr>
-    <tr>
-      <td>Primary Colors</td>
-      <td>Red, Blue, Yellow</td>
-      <td><img src="pexels-photo-1061781.jpeg" alt="Primary Colors" width="100" height="100"></td>
-    </tr>
-    <tr>
-      <td>Secondary Colors</td>
-      <td>Green, Orange, Purple</td>
-      <td><img src="pexels-photo-1061781.jpeg" alt="Secondary Colors" width="100" height="100"></td>
-    </tr>
-    <tr>
-      <td>Warm Colors</td>
-      <td>Red, Orange, Yellow</td>
-      <td><img src="pexels-photo-1061781.jpeg" alt="Warm Colors" width="100" height="100"></td>
-    </tr>
-    <tr>
-      <td>Cool Colors</td>
-      <td>Blue, Green, Purple</td>
-      <td><img src="pexels-photo-1061781.jpeg" alt="Cool Colors" width="100" height="100"></td>
-    </tr>
-    <tr>
-      <td>Neutral Colors</td>
-      <td>Black, White, Gray, Brown</td>
-      <td><img src="pexels-photo-1061781.jpeg" alt="Neutral Colors" width="100" height="100"></td>
-    </tr>
-  </table>
-
-  <hr>
+  <section class="color-table">
+    <h2>Color Categories</h2>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Examples</th>
+        <th>Visual</th>
+      </tr>
+      <tr>
+        <td>Primary Colors</td>
+        <td>Red, Blue, Yellow</td>
+        <td><img src="pexels-photo-1061781.jpeg" alt="Primary Colors" width="100"></td>
+      </tr>
+      <tr>
+        <td>Secondary Colors</td>
+        <td>Green, Orange, Purple</td>
+        <td><img src="pexels-photo-1061781.jpeg" alt="Secondary Colors" width="100"></td>
+      </tr>
+      <tr>
+        <td>Warm Colors</td>
+        <td>Red, Orange, Yellow</td>
+        <td><img src="pexels-photo-1061781.jpeg" alt="Warm Colors" width="100"></td>
+      </tr>
+      <tr>
+        <td>Cool Colors</td>
+        <td>Blue, Green, Purple</td>
+        <td><img src="pexels-photo-1061781.jpeg" alt="Cool Colors" width="100"></td>
+      </tr>
+      <tr>
+        <td>Neutral Colors</td>
+        <td>Black, White, Gray, Brown</td>
+        <td><img src="pexels-photo-1061781.jpeg" alt="Neutral Colors" width="100"></td>
+      </tr>
+    </table>
+  </section>
 
 </body>
 </html>
