@@ -2,178 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alenny's Website</title>
-  <base target="_blank">
-  <style>
-    body {
-      background-color: pink;
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    .top-bar {
-      background-color: #111;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-sizing: border-box;
-    }
-
-    .top-bar .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .top-bar .logo img {
-      width: 60px;
-      height: auto;
-      border-radius: 8px;
-      margin-right: 10px;
-    }
-
-    .contact-links {
-      display: flex;
-      gap: 15px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .contact-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .contact-links a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      background-color: rgb(243, 8, 47);
-      color: black;
-      text-align: center;
-      padding: 100px 10px 30px;
-    }
-
-    .content {
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer {
-      background-color: #fff;
-      padding: 30px;
-      text-align: center;
-    }
-
-    form {
-      display: inline-block;
-      text-align: left;
-      margin-top: 10px;
-      max-width: 300px;
-      width: 100%;
-    }
-
-    form input {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    form button {
-      width: 100%;
-      padding: 10px;
-      background-color: rgb(243, 8, 47);
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background-color: #c7052d;
-    }
-
-    .contact-info {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-
-    .contact-info a {
-      color: black;
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .top-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
-      .contact-links {
-        flex-direction: column;
-        white-space: normal;
-      }
-    }
-  </style>
+  <title>Home | Alenny</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="logo">
-      <a href="#">
-        <img src="pexels-pixabay-257540.jpg" alt="Logo">
-      </a>
+  <header class="header">
+    <div class="nav-wrapper">
+      <a href="#" class="logo">Alenny.</a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="portfolio.html">Portfolios</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="contact-links">
-      <a href="mailto:almontealenny@gmail.com">almontealenny@gmail.com</a>
-      <a href="tel:+16468520287">646-852-0287</a>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header>
-    <h1>My first HTML file in Visual Studio Code</h1>
   </header>
 
-  <!-- Main Content -->
-  <div class="content">
-    <p>Hello everyone, my name is Alenny Almonte. This is my first HTML file where I'll be learning the fundamentals of web development.</p>
-    <p><i><a href="https://www.w3schools.com">Visit W3Schools</a> – A fantastic resource for learning HTML, CSS, JavaScript, and more.</i></p>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="number" placeholder="Your Phone Number" required />
-      <button type="submit">Submit</button>
-    </form>
-
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:almontealenny@gmail.com">almontealenny@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+16468520287">646-852-0287</a></p>
-      <p><a href="color-table.html">View Color Table</a> | <a href="video_code.html">Visit Video Page</a></p>
+  <section class="home" id="home">
+    <div class="home-container">
+      <div class="home-content">
+        <h1>Welcome to My Website</h1>
+        <p>Hello everyone, my name is Alenny Almonte. This is my first HTML file where I’m learning the fundamentals of web development.</p>
+        <p><a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a> – A fantastic resource for learning HTML, CSS, JavaScript, and more.</p>
+      </div>
     </div>
-  </footer>
+  </section>
 
 </body>
 </html>
